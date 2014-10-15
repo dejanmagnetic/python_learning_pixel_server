@@ -1,0 +1,34 @@
+{
+    "namespace": "magnetic.pixel.server",
+    "type": "record",
+    "name": "PixelLog",
+    "fields": [
+        {
+            "name": "user",
+            "type": "string"
+        },
+        {
+            "name": "advertiser",
+            "type": "string"
+        },
+        {
+            "name": "ip",
+            "type": ["null", "string" ]
+        },
+        {
+            "name": "agent",
+            "type": ["null", "string"]
+        },
+        {
+            "name": "timestamp",
+            "type": "float"
+        },
+        {
+            "name": "keywords",
+            "type": [ "null" , {
+                "type": "array",
+                "items": "string"
+            }]
+        }
+    ]
+}
